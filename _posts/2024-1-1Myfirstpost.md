@@ -20,4 +20,6 @@ A database administrator is someone who;
 5/ They are also responsible for designing the blue print for the database.
 6/ Finally they make sure that the database is running as efficiently as possible.
 
+During flip class we discuss about Database administrator within our own group for 20 minutes. After that i explained about the database administrator to the other group peers.
+
 To improve the flip class we need to do some practical work to have better understanding on how things actually works. Because I believe some understand more better on doing the practical works.
