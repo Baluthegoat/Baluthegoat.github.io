@@ -7,7 +7,7 @@ tages: [SWE101]
 ### Topic : Introduction to Cyper security
 ---
 
-There are two fields of cyper security:
+There are two fields of cyper security;
 1/ Offensive Security.
 2/ Defensive Security.
 
