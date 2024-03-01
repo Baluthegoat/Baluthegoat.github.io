@@ -1,0 +1,22 @@
+---
+Title: SWS101 Unit 1
+Categories: [SWS101, Unit_1, Bandit_game]
+Tages: [SWS101]
+---
+
+# Topics : Networking.
+---
+## Before knowing about networking.
+Before knowing about networking, I had a basic understanding of the Internet that it's just a radio signal transmitting from the device to satellite and bouncing back to it. More over I thought that WIFI and hotspot it's a local network that acts like a internet. on top of that the surprising thing was sharing hotsport from mobile to computer/laptop because I didn't even thought that we could use internet on laptop from phone. 
+![alt text](networking.png)
+Not only but also the confusing part is that when we use hostport from phone, like I have mentioned above phone acts like a satellite. What ever the computer is requesting it gets using the internet from the phone. 
+
+## After learning about networking.
+---
+**How does the internet work?**
+The web broswer connects to the web server and send a http request for the web page. When the web server recevices the requested page. It check for the requested page and sends back the page. If the desired page is not found then the web server will send the http 404 error which means that the page is not found in the server.
+![alt text](web.png)
+
+**How does computer network work?**
+Computer uses a system of rules called communication protocols to transmit information over physical or wireless technology.
+
