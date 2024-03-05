@@ -8,7 +8,7 @@ Tages: [DBS101]
 ---
 During the flip class I learn about the SQL set operation. SQL set operation is used to combine the two or more SQL statement. There are mainly 4 types of set operations namely **union**,**union all**,**intersect**,**minus**.
 
-![alt text](sql.png)
+![alt text](sqlset.png)
 
 **Union** in this operation when two table is joined the output will be combined into one result set. If there is duplicate value in the table it will be eliminated.
 
