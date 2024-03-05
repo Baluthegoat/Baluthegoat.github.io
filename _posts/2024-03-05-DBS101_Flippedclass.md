@@ -1,6 +1,6 @@
 ---
-Title: DBS101 Flipped Class 1
-Categories: [DBS101, Flipped_Class1]
+Title: DBS101 Flipped Class 3
+Categories: [DBS101, Flipped_Class3]
 Tages: [DBS101]
 ---
 
