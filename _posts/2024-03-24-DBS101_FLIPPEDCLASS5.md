@@ -6,6 +6,7 @@ Tages: [DBS101]
 
 ### Topic : Normal Forms
 ---
+
 During flipped class I learned about **First normal form and second normal form**,**BCNF**(Boyce-Codd Normal Form),**Third Normal Form**.
 Normalization is the process of minimizing the redundancy from the relation. Moreover Normal forms are mainly used to eliminate or reduce the redundancy in the database.
 
