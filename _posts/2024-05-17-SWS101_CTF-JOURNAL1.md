@@ -189,12 +189,6 @@ Which simple (and frequently relied upon) protocol is often blocked, requiring t
 
 **[Research]** Which Nmap switch allows you to append an arbitrary length of random data to the end of packets? ⇒ —data-length
 
-Task 13
-
-Which simple (and frequently relied upon) protocol is often blocked, requiring the use of the **`-Pn`** switch? ⇒ ICMP
-
-**[Research]** Which Nmap switch allows you to append an arbitrary length of random data to the end of packets? ⇒ —data-length 
-
 # Task 14
 
 Does the target ip respond to ICMP echo (ping) requests (Y/N)? ⇒ N
