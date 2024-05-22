@@ -1,10 +1,11 @@
 ---
 Title: SWS101 CTF-JOURNAL1
-Categories: [SWS101, CTF-JOURNAL1 ]
+Categories: [SWS101, CTF-JOURNAL1]
 Tages: [SWS101]
 ---
 
 ## Web Application
+
 A web application is like a program that we can use without installation as long as we have a modern standard web browser.
 
 The following are some examples of web applications:
@@ -13,7 +14,7 @@ The following are some examples of web applications:
 - Online office suites such as Microsoft Office 365 (Word, Excel, and PowerPoint), Google Drive (Docs, Sheets, and Slides), and Zoho Office (Writer, Sheet, and Show)
 - Online shopping such as Amazon.com, AliExpress, and Etsy
 
-Web application is the program running on a remote server and a server is a computer system running continuously to serve the client. 
+Web application is the program running on a remote server and a server is a computer system running continuously to serve the client.
 
 Example , for online shopping application it will read the data about the products and their details from a database server. So for the online shopping web applications it will need more than one database to assess.
 
@@ -37,7 +38,7 @@ There are few main categories of common attacks web application as follows,
 - Search for the product: The attacker can attempt to breach the system by adding specific characters and codes to the search term. The attacker’s objective is for the target system to return data it should not or execute a program it should not.
 - Provide payment details: The attacker would check if the payment details are sent in cleartext or using weak encryption. Encryption refers to making the data unreadable without knowing the secret key or password.
 
-## Identification and authentication failure 
+## Identification and authentication failure
 
 Identification refers to the ability to identify a user uniquely and authentication refers to the ability to prove that users is whom they claim to be. So the online shopping must confirm the user’s identity and authenticate them before they can use the system. But this step is prone to different types of weakness as follows.
 
@@ -49,7 +50,7 @@ Identification refers to the ability to identify a user uniquely and authenticat
 
 ## Broken access control
 
-Access control ensures that each user can only access files (documents, images, etc.) related to their role or work. 
+Access control ensures that each user can only access files (documents, images, etc.) related to their role or work.
 
 Example vulnerabilities related to access control include:
 
