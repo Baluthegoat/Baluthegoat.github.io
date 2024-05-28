@@ -91,3 +91,5 @@ We will hack the system back and undo the attacker’s steps. On “Your Activit
 Check the other users to discover which user account was used to make the malicious changes and revert them. After reverting the changes, what is the flag that you have received?
 
 ⇒ THM{IDOR_EXPLORED}
+
+![alt text](../assets/flag.png)
