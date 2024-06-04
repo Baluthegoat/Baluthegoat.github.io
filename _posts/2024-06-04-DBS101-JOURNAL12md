@@ -1,0 +1,105 @@
+---
+Title: DBS101 Journal 12
+Categories: [DBS101, Journal_12]
+Tages: [DBS101]
+---
+
+## Topic : Recovery Algorithm
+
+Recovery algorithms are techniques to ensure database consistency, transaction atomicity, and durability despite failures
+
+These algorithms work to bring the database back to a consistent state after a crash or other unforeseen events, preventing data loss and ensuring accurate information.
+
+1. Recovery Techniques:
+
+- Undo Logging: This technique focuses on undoing the effects of uncommitted transactions. It involves recording the inverse operation for each action performed by a transaction in a log file. During recovery, the log is read in reverse order, and the inverse operations are executed to undo any changes made by incomplete transactions.
+- Redo Logging: This technique ensures that all committed transactions are reflected in the database. It involves recording the changes made by a transaction in a log file before applying them to the database. During recovery, the log is read forward, and the changes are applied to the database to ensure consistency.
+- Combined Logging: This technique combines the benefits of both Undo and Redo logging. It records both the original operation and its inverse operation in the log file. This allows for both undoing uncommitted transactions and redoing committed transactions, providing a comprehensive recovery solution.
+
+2. Recovery Strategies:
+
+- Checkpoint: This mechanism periodically creates a consistent snapshot of the database state, including all committed transactions and their corresponding log entries. This allows for faster recovery as only the log entries after the checkpoint need to be processed.
+- Transaction Rollback: This process involves undoing the changes made by a transaction that has failed or aborted. It utilizes the undo log to reverse the operations of the transaction, ensuring data consistency.
+- Transaction Commit: This process involves making the changes made by a transaction permanent in the database. It uses the redo log to apply the changes to the database, ensuring the transaction's effects are persistent.
+
+3. Recovery Process:
+
+- Analysis: The recovery process starts by analyzing the log file and identifying the last checkpoint and the transactions that were active at the time of the failure.
+- Undo: The system then rolls back any uncommitted transactions using the undo log, ensuring data integrity.
+- Redo: Finally, the system applies all committed transactions to the database using the redo log, guaranteeing consistency and restoring the database to its last consistent state.
+
+4. Recovery Categories:
+
+- Crash Recovery: This type of recovery handles situations where the system crashes but the data is still intact. The recovery process involves restoring the database to its last consistent state using the log files and checkpoints.
+- Media Recovery: This type of recovery handles situations where the data itself is lost due to media failure (e.g., disk corruption). It involves restoring the database from backup files, potentially combined with log files to ensure consistency.
+
+## Aries
+
+refers to the ARIES (Algorithm for Recovery and Isolation using Escalating Locks) recovery method. It's a popular and widely used technique for ensuring data consistency and durability in database systems.
+
+1. Log-Based Recovery: ARIES relies heavily on a transaction log, which is a sequential record of all database changes. This log is crucial for recovery after system crashes or failures.
+
+2. Write-Ahead Logging (WAL): Before any change is made to the database itself, the corresponding update is written to the log file. This ensures that even if a crash occurs during the update, the log will contain the necessary information to redo the changes later.
+
+3. Redo and Undo Operations: ARIES uses both redo and undo operations during recovery. * Redo: Re-applies changes from the log to the database to bring it to a consistent state after a crash. This is done for incomplete transactions (those that didn't commit before the crash). * Undo: Reverses the effects of changes made by incomplete transactions. This is essential to ensure data integrity and consistency.
+
+4. Transaction Isolation and Concurrency Control: ARIES also plays a role in concurrency control. It uses two-phase locking (2PL) to manage access to data and prevent inconsistencies that can arise when multiple transactions access the same data.
+
+Benefits of ARIES:
+
+- Robustness: ARIES is designed to handle crashes gracefully and recover the database to a consistent state.
+- Performance: By using WAL and efficient recovery algorithms, ARIES achieves good performance even under heavy workloads.
+- Concurrency: 2PL, combined with the log-based recovery mechanism, allows for efficient concurrent access to data.
+
+Key Components of ARIES:
+
+- Transaction Log: Sequential record of all database changes.
+- Log Manager: Manages the log, including writing, reading, and managing its structure.
+- Recovery Manager: Responsible for recovering the database after a crash using the log.
+
+
+## Database logging
+
+Database logging is a crucial component in database management systems (DBMS) that records all changes made to the data.
+
+It serves two primary functions:
+
+1. Data Recovery:
+
+- When a database crash or other unexpected failure occurs, the log files enable the DBMS to reconstruct the database to its last consistent state. This ensures data integrity and prevents data loss.
+- Log files contain information like "before image" and "after image" of data changes, allowing the DBMS to undo or redo transactions to reach a valid state.
+- Various recovery techniques are available, including:
+  - Rollback recovery: Undoing changes from the log to restore a consistent state.
+  - Rollforward recovery: Applying changes from the log to bring the database to the current state.
+  - Point-in-time recovery: Restoring the database to a specific point in time by applying changes from the log.
+
+2. Data Security:
+
+- Logging provides audit trails, allowing administrators to track user activities and identify potential security breaches.
+- It helps enforce ACID properties (Atomicity, Consistency, Isolation, Durability) ensuring transactions are processed accurately and reliably.
+- The log can be used to detect and prevent data corruption by verifying the consistency of database changes.
+
+Types of Database Logging:
+
+- Physical logging: Records changes at the physical level, such as page modifications.
+- Logical logging: Records changes at the logical level, such as changes to specific rows or columns.
+- Redo logging: Only records changes that need to be redone in case of a failure.
+- Undo logging: Only records changes that need to be undone in case of a failure.
+
+Implementation Techniques:
+
+- Write-ahead logging (WAL): Changes are written to the log file before being applied to the actual database.
+- Archiving: Regularly backing up log files to prevent data loss in case of disk failures.
+- Log sequence numbers (LSNs): Used to identify and order log records.
+
+Advantages of Database Logging:
+
+- Data Integrity: Ensures data consistency and prevents data loss.
+- Data Recovery: Allows for quick and efficient database recovery after failures.
+- Security: Provides audit trails and helps detect and prevent security breaches.
+- Performance: Can be optimized for performance with techniques like buffering and asynchronous logging.
+
+Disadvantages of Database Logging:
+
+- Overhead: Logging can add overhead to database operations, especially during high-write workloads.
+- Storage Requirements: Log files can consume significant storage space, especially in large databases.
