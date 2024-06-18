@@ -3,6 +3,7 @@ Title: SWS101 CTF-JOURNAL5
 Categories: [SWS101, CTF-JOURNAL5 ]
 Tages: [SWS101]
 ---
+
 ## HTTP in detail
 
 HTTP is the set of rules used for communicating with web servers for the transmitting of webpage data, whether that is HTML, Images, Videos, etc.
