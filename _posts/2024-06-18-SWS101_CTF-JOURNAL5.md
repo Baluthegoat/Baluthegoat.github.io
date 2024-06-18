@@ -21,14 +21,14 @@ On the mock webpage on the right there is an issue, once you've found it, click 
 
 ⇒ THM{INVALID_HTTP_CERT}
 
-![alt text](../assets/mockweb.png)
+<!-- ![alt text](../assets/mockweb.png) -->
 
 
 **Requests And Responses**
 
 what is a URL ( Uniform resource locator)
 
-![alt text](../assets/url.png)
+<!-- ![alt text](../assets/url.png) -->
 
 A URL is predominantly an instruction on how to access a resource on the internet. 
 
@@ -209,7 +209,7 @@ What header tells the web server which website is being requested? ⇒ host
 
 Cookies are just a small piece of data that is stored in the computer. It is always saved when we receive a set cookie header from a web server. Cookie helps the web sever to remind who we are and some personal settings for the website or whether we have been to the website before or not.
 
-![alt text](../assets/cookies.png)
+<!-- ![alt text](../assets/cookies.png) -->
 
 Cookies can be used for many purposes but are most commonly used for website authentication. The cookie value won't usually be a clear-text string where you can see the password, but a token (unique secret code that isn't easily humanly guessable).
 
@@ -221,28 +221,28 @@ Make a GET request to /room
 
 ⇒ **THM{YOU'RE_IN_THE_ROOM}**
 
-![alt text](../assets/room.png)
+<!-- ![alt text](../assets/room.png) -->
 
 Make a GET request to /blog and using the gear icon set the id parameter to 1 in the URL field
 
 ⇒ THM{YOU_FOUND_THE_BLOG}
 
-![alt text](../assets/blog.png)
+<!-- ![alt text](../assets/blog.png) -->
 
 Make a DELETE request to /user/1
 
 ⇒ THM{USER_IS_DELETED}
 
-![alt text](../assets/delete.png)
+<!-- ![alt text](../assets/delete.png) -->
 
 Make a PUT request to /user/2 with the username parameter set to admin
 
 ⇒ THM{USER_HAS_UPDATED}
 
-![alt text](../assets/put.png)
+<!-- ![alt text](../assets/put.png) -->
 
 POST the username of thm and a password of letmein to /login
 
 ⇒ THM{HTTP_REQUEST_MASTER}
 
-![alt text](../assets/post.png)
+<!-- ![alt text](../assets/post.png) -->
