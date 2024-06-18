@@ -67,7 +67,7 @@ Referer: https://tashi.com/
 
 **Line 3:** We tell the web server we are using the Firefox version 87 Browser
 
-**Line 4:** We are telling the web server that the web page that referred us to this one is [https://tashi.com](https://tryhackme.com/)
+**Line 4:** We are telling the web server that the web page that referred us to this one is https://tashi.com
 
 **Line 5:** HTTP requests always end with a blank line to inform the web server that the request has finished.
 
