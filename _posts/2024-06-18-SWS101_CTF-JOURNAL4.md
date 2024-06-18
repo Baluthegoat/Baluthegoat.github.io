@@ -92,23 +92,23 @@ What is the CNAME of shop.website.thm?
 
 ⇒ [shops.myshopify.com](http://shops.myshopify.com)
 
-<!-- ![alt text](../assets/shop.png) -->
+![alt text](../assets/shop.png)
 
 What is the value of the TXT record of website.thm?
 
 ⇒ THM{7012BBA60997F35A9516C2E16D2944FF}
 
-<!-- ![alt text](../assets/value.png) -->
+![alt text](../assets/value.png)
 
 What is the numerical priority value for the MX record?
 
 ⇒ 30
 
-<!-- ![alt text](../assets/mx.png) -->
+![alt text](../assets/mx.png)
 
 What is the IP address for the A record of www.website.thm?
 
 ⇒ 10.10.10.10
 
-<!-- ![alt text](../assets/ip.png) -->
+![alt text](../assets/ip.png)
 
