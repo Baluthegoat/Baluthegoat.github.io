@@ -1,6 +1,6 @@
 ---
-Title: SWS101 CTF-JOURNAL5
-Categories: [SWS101, CTF-JOURNAL5 ]
+Title: SWS101 CTF-JOURNAL6
+Categories: [SWS101, CTF-JOURNAL6 ]
 Tages: [SWS101]
 ---
 
