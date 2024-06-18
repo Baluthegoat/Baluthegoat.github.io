@@ -146,7 +146,7 @@ What switch would give you a more verbose output? ⇒ -v
 
 # Traceroute
 
-The internet is combination of different servers and endpoints that networked up to each other. So to get the content first it need to go through a bunch of other severs but the traceroute allows us to see each of these connections that allows us to see every intermediate step between our computer and the resource that we request. The basic syntax for traceroute on the Linux is **traceroute <destination>**
+The internet is combination of different servers and endpoints that networked up to each other. So to get the content first it need to go through a bunch of other severs but the traceroute allows us to see each of these connections that allows us to see every intermediate step between our computer and the resource that we request. The basic syntax for traceroute on the Linux is traceroute destination
 
 ! [alt text](../assets/trace.png)
 
@@ -164,7 +164,7 @@ Domains are leased out by companies called Domain Registrars. If you want a doma
 
 WHOIS essentially allows us to query who the domain name is registered. 
 
-Whois lookups are very easy to perform. Just use **`whois <domain>`** to get a list of available information about the domain registration:
+Whois lookups are very easy to perform. Just use whois domain to get a list of available information about the domain registration:
 
 ![alt text](../assets/who.png)
 
