@@ -134,9 +134,9 @@ The ping command is used when we want to test whether a connection to a remote r
 
 Notice that the ping command actually returned the IP address for the Google server that it connected to, rather than the URL that was requested.
 
-What command would you use to ping the [bbc.co.uk](http://bbc.co.uk/) website? ⇒ ping [bbc.co.uk](http://bbc.co.uk/)
+What command would you use to ping the bbc.co.uk website? ⇒ ping bbc.co.uk
 
-Ping [*muirlandoracle.co.uk](http://muirlandoracle.co.uk).* What is the IPv4 address? ⇒ 217.160.0.152
+Ping muirlandoracle.co.uk. What is the IPv4 address? ⇒ 217.160.0.152
 
 What switch lets you change the interval of sent ping requests? ⇒ -i
 
