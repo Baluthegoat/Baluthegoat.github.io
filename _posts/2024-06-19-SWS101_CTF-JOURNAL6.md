@@ -148,7 +148,7 @@ What switch would give you a more verbose output? ⇒ -v
 
 The internet is combination of different servers and endpoints that networked up to each other. So to get the content first it need to go through a bunch of other severs but the traceroute allows us to see each of these connections that allows us to see every intermediate step between our computer and the resource that we request. The basic syntax for traceroute on the Linux is traceroute destination
 
-! [alt text](../assets/trace.png)
+<!-- ! [alt text](../assets/trace.png) -->
 
 What switch would you use to specify an interface when using Traceroute?⇒> -i
 
