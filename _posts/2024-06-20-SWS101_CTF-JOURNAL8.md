@@ -20,7 +20,7 @@ Base 7 : base 7 includes 0 till 6. if we write 243 in base 7 it would be as foll
 
 243 = (7^2 * 2) + (7^1 * 4) + (7^0 * 3) = 98 + 28 + 3 = 129(in decimal).
 
-9 = (7^1 * **1**) + (7^0 * **2**) = 7 + 2. Our answer is going to be 12(base7) = 9(base10).
+9 = (7^1 * 1) + (7^0 * 2) = 7 + 2. Our answer is going to be 12(base7) = 9(base10).
 
 Base 2 : it includes 0 and 1. Some of the good values to know are as follows
 
@@ -96,21 +96,21 @@ The CUP has its won storage that is extremely fast and greater. But space is in 
 
 There are 8 main general purpose of registers:
 
-- RAX - Known as the **accumulator register**. Often used to store the return value of a function.
+- RAX - Known as the accumulator register. Often used to store the return value of a function.
 
-- RBX - Sometimes known as the **base register**, not to be confused with the base pointer. Sometimes used as a base pointer for memory access.
+- RBX - Sometimes known as the base register, not to be confused with the base pointer. Sometimes used as a base pointer for memory access.
 
-- RDX - Sometimes known as the **data register**.
+- RDX - Sometimes known as the data register.
 
-- RCX - Sometimes known as the **counter register**. Used as a loop counter.
+- RCX - Sometimes known as the counter register. Used as a loop counter.
 
-- RSI - Known as the **source index**. Used as the source pointer in string operations.
+- RSI - Known as the source index. Used as the source pointer in string operations.
 
-- RDI - Known as the **destination index**. Used as the destination pointer in string operations.
+- RDI - Known as the destination index. Used as the destination pointer in string operations.
 
-- RSP - The **stack pointer**. Holds the address of the top of the stack.
+- RSP - The stack pointer. Holds the address of the top of the stack.
 
-- RBP - The **base pointer**. Holds the address of the base (bottom) of the stack.
+- RBP - The base pointer. Holds the address of the base (bottom) of the stack.
 
 Each register can be broken down into segments which can be referenced with other register names. RAX is 64 bits, the lower 32 bits can be referenced with EAX, and the lower 16 bits can be referenced with AX. AX is broken down into two 8 bit portions. The high/upper 8 bits of AX can be referenced with AH. The lower 8 bits can be referenced with AL.
 
@@ -118,13 +118,13 @@ Each register can be broken down into segments which can be referenced with othe
 
 RAX consists of all 8 bytes which would be bytes 0-7. EAX consists of bytes 4-7, AX consists of bytes 6-7, AH consists of only byte 6, and AL consists of only byte 7 (the final byte).
 
-What is the difference between the "E" and "R" prefixes? Besides one being a 64-bit register and the other 32 bits, the **"E" stands for extended**. The **"R" stands for register**.
+What is the difference between the "E" and "R" prefixes? Besides one being a 64-bit register and the other 32 bits, the "E" stands for extended. The "R" stands for register.
 
 # Different data types
 
-- **Floating Point Values** - Floats and Doubles.
+- Floating Point Values - Floats and Doubles.
 
-- **Integer Values** - Integers, Booleans, Chars, Pointers, etc.
+- Integer Values - Integers, Booleans, Chars, Pointers, etc.
 
 Floating-point values are represented differently than integers. Because of this, floating-point values have special registers. These registers include YMM0 to YMM15(64-bit) and XMM0 to XMM15 (32-bit). The XMM registers are the lower half of the YMM registers, similar to how EAX is the lower 32 bits of RAX.
 
