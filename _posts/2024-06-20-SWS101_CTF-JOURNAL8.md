@@ -126,7 +126,7 @@ What is the difference between the "E" and "R" prefixes? Besides one being a 64-
 
 - **Integer Values** - Integers, Booleans, Chars, Pointers, etc.
 
-Floating-point values are represented differently than integers. Because of this, floating-point values have special registers. These registers include **YMM0 to YMM15** (64-bit) and **XMM0 to XMM15** (32-bit). The XMM registers are the lower half of the YMM registers, similar to how EAX is the lower 32 bits of RAX.
+Floating-point values are represented differently than integers. Because of this, floating-point values have special registers. These registers include YMM0 to YMM15(64-bit) and XMM0 to XMM15 (32-bit). The XMM registers are the lower half of the YMM registers, similar to how EAX is the lower 32 bits of RAX.
 
 Extra registers
 
@@ -138,11 +138,11 @@ How many bytes is EAX? ⇒ 4
 
 Instructions
 
-There are 1500 instructions and a majority of the instructions are not commonly used or they are just variations. There are three different terms that we should know: **immediate, register** and **memory.** 
+There are 1500 instructions and a majority of the instructions are not commonly used or they are just variations. There are three different terms that we should know: immediate, register and memory.
 
-- An **immediate value** (or just immediate, sometimes IM) is something like the number 12. An immediate value is *not* a memory address or register, instead, it's some sort of constant data.
-- A **register** is referring to something like RAX, RBX, R12, AL, etc.
-- **Memory** or a **memory address** refers to a location in memory (a memory address) such as 0x7FFF842B.
+- An immediate value (or just immediate, sometimes IM) is something like the number 12. An immediate value is *not* a memory address or register, instead, it's some sort of constant data.
+- A register is referring to something like RAX, RBX, R12, AL, etc.
+- Memory or a memory address refers to a location in memory (a memory address) such as 0x7FFF842B.
 
 The semicolon at the end of or in between of a few assembly instructions is to write a comment in assembly.
 
