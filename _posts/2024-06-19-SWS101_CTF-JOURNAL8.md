@@ -23,8 +23,8 @@ Base 7 : base 7 includes 0 till 6. if we write 243 in base 7 it would be as foll
 9 = (7^1 * **1**) + (7^0 * **2**) = 7 + 2. Our answer is going to be 12(base7) = 9(base10).
 
 Base 2 : it includes 0 and 1. Some of the good values to know are as follows
-<!-- 
-![alt text](../assets/ass.png) -->
+
+![alt text](../assets/ass.png)
 
 Binary are usually denoted with the prefix "0b" such as 0b0110 and sometimes denoted with the suffix "b" such as 110b.
 
@@ -114,7 +114,7 @@ There are 8 main general purpose of registers:
 
 Each register can be broken down into segments which can be referenced with other register names. RAX is 64 bits, the lower 32 bits can be referenced with EAX, and the lower 16 bits can be referenced with AX. AX is broken down into two 8 bit portions. The high/upper 8 bits of AX can be referenced with AH. The lower 8 bits can be referenced with AL.
 
-<!-- ![alt text](../assets/reg.png) -->
+![alt text](../assets/reg.png)
 
 RAX consists of all 8 bytes which would be bytes 0-7. EAX consists of bytes 4-7, AX consists of bytes 6-7, AH consists of only byte 6, and AL consists of only byte 7 (the final byte).
 
@@ -130,7 +130,7 @@ Floating-point values are represented differently than integers. Because of this
 
 Extra registers
 
-There are additional registers that should be mentioned. These registers don't have any special uses. There are registers **r8 to r15** which are designed to be used by integer type values
+There are additional registers that should be mentioned. These registers don't have any special uses.
 
 How many bytes is RAX? ⇒ 8
 
