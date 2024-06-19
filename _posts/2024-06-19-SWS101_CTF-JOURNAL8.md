@@ -151,7 +151,7 @@ Common Instructions
 Data movement
 
 **MOV** is used to move/store the source operand into the destination. The source doesn't have to be an immediate value like it is in the following example. In the following example, the immediate value of 5 is being moved into RAX.
-```bash
+
 mov RAX, 5  
 
 LEA is short for Load Effective Address. This is essentially the same as MOV except for addresses. The key difference between MOV and LEA is that LEA doesn't dereference. It's also commonly used to compute addresses.
